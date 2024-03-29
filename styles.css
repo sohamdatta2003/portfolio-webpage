@@ -1,0 +1,171 @@
+a{color:white;text-decoration:none;font-size:1.5em;
+padding:2 rem 2rem;margin:1em;}
+a:hover{color:red;}
+li>a:hover{color:#242F3F}
+img{border-radius: 10px;}
+#myimg{display: flex;
+  padding-left: 20px;border-radius: 10px;}
+#navbar{top:0;left:0;position:fixed;width:100%;background-color:#be3144;}
+#navbar>ul{display:flex;flex-direction:row;}
+li{list-style:none;border-radius: 5px;}
+hr{border:solid red 1px;width: 100vw;}
+#welcome-section{background: url("background.gif");background-size:auto;height: 100vh;width: 110%;margin: 0%;
+display: flex;flex-direction:column;justify-content:center;padding:50px;
+}
+h1{color:black;font-size:3em;text-align:center;font-style: Poppins;}
+#web{color:#Fff;font-size:1.5em;font-style: oblique;display: flex;flex-direction: column;}
+.projects{background-color:#0e242d;text-align:center;margin-top:50px;width:100%;height:auto;top:0;left: 0;bottom: 0;right:0;margin-bottom: 200px;}
+.grid-class{padding: 10px;width:90vw;height:auto;display:flex;flex-direction: column;justify-content: space-evenly;align-items:center;}
+h2{text-align:center;font-size:2.6rem;color:white;}
+h3{font-size:2rem;}
+.grid{display:grid;padding: 10px;margin: 10px;
+  border: #303841;
+  background-color: rgb(55, 125, 174);
+  text-align: center;border-radius: 10px;
+  height: auto;width:40vw;
+}
+.grid-class>.grid:hover{background-color: #3ebfcb;}
+.grid-class>.grid{width:80vw;}
+@media screen{
+  h2{font-size:2em;}
+}
+.about-me{max-width: 60vw;}
+.aboutH{margin-top: 250px;background-color:  #0e242d;width: 100vw;
+  height: 100vh;}
+#about{color: aliceblue;width: 100vw; 
+    height: 100vh;font-size:x-large ;font-style:oblique;display:flex;flex-direction:row;padding: 20px;}
+.project-title{text-align:center;color:white;font-size:1.5em;}
+.tech{font-size: 2rem;display:flex;flex-direction: row;justify-content: center;color: black;}
+.contact-section{display:flex;flex-direction:column;justify-content:center;background-color:#0e242d;margin-top: 200px;}
+
+#link{text-align:center;color:white;font-size:1.3em}
+#profile-link{display:flex;flex-direction:row;justify-content:center;}
+.row{display:flex;justify-content: space-between;flex-wrap: wrap;}
+.container-right{padding: 100px;
+  border:solid black 1px;
+  background-color: grey;
+  margin: 100px;
+  border-radius: 25px;}
+.container-left {
+  padding: 150px;border:solid black 1px;background-color: grey;margin:100px;border-radius:25px;
+}
+.welcome-section>.grid{display:flex;height:60vh;flex-direction: column;}
+
+.button{background-color: #be3144;color:#242F3F;border-radius: 10px;width:auto;height: 3rem;font-size: 1.5rem;}
+/*animation*/
+.grid .dynamic{
+  margin-left: 15px;
+  height: 90px;
+  line-height: 90px;
+  overflow: hidden;
+}
+.dynamic li{
+  color:#Fff;
+  list-style: none;
+  font-size: 60px;
+  font-weight: 500;
+  position:relative;
+  top:0;
+  animation: slide 12s steps(4) infinite;
+}
+@keyframes slide {
+  100% {
+    top: -360px;
+  }
+}
+.dynamic li span{
+  position: relative;
+  margin: 5px 0;
+  line-height: 90px;
+}
+.dynamic li span::after{
+  content: "";
+  position:absolute;
+  left:0;
+  height:100%;
+  width:100%;
+  background: rgb(55, 125, 174);
+  border-left:3px solid black;
+  animation: typing 3s steps(10) infinite;
+}
+@keyframes typing {
+  40%,60% {
+      left: calc(100% + 40px);
+    }
+  100% {
+      left: 0;
+    }
+  }
+/*preloader*/
+body,
+html {
+  height: 100%;
+  text-align: center;
+}
+
+body {
+  background-color: #0e242d;
+  margin-top: 20px;
+}
+
+.loader {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  position: relative;
+  border: 4px solid #Fff;
+  top: 50%;
+  animation: loader 2s infinite ease;
+}
+
+.loader-inner {
+  vertical-align: top;
+  display: inline-block;
+  width: 100%;
+  background-color: #fff;
+  animation: loader-inner 2s infinite ease-in;
+}
+
+@keyframes loader {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  25% {
+    transform: rotate(180deg);
+  }
+
+  50% {
+    transform: rotate(180deg);
+  }
+
+  75% {
+    transform: rotate(360deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes loader-inner {
+  0% {
+    height: 0%;
+  }
+
+  25% {
+    height: 0%;
+  }
+
+  50% {
+    height: 100%;
+  }
+
+  75% {
+    height: 100%;
+  }
+
+  100% {
+    height: 0%;
+  }
+}
