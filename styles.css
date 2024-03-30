@@ -5,7 +5,7 @@ li>a:hover{color:#242F3F}
 img{border-radius: 10px;}
 #myimg{display: flex;
   padding-left: 20px;border-radius: 10px;}
-#navbar{top:0;left:0;position:fixed;width:100%;background-color:#be3144;}
+#navbar{top:0;left:0;position:fixed;width:100%;background-color:#be3144;display:none;}
 #navbar>ul{display:flex;flex-direction:row;}
 li{list-style:none;border-radius: 5px;}
 hr{border:solid red 1px;width: 100vw;}
