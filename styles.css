@@ -49,7 +49,7 @@ h3{font-size:2rem;}
 .container-left {
   padding: 150px;border:solid black 1px;background-color: grey;margin:100px;border-radius:25px;
 }
-.welcome-section>.grid{display:flex;height:60vh;flex-direction: column;}
+.welcome-section>.grid{display:none;height:60vh;flex-direction: column;}
 
 .button{background-color: #be3144;color:#242F3F;border-radius: 10px;width:auto;height: 3rem;font-size: 1.5rem;}
 /*animation*/
